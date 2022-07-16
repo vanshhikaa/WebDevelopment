@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collect User Data</title>
+    <style>
+      body {
+        background-color: lightgray;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 600px;
+        min-height: 400px;
+        border: 2px solid brown;
+        background-color: rgb(106, 122, 122);
+        /* margin: auto; It gives margin(space) from left and right. */
+        margin: 50px auto; /*It gives 50px space from top and auto space from left and right.*/
+        border-radius: 30px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .labels {
+        margin-left: 30px;
+        margin-right: 10px;
+        /* margin-bottom: 20px; */
+      }
+      input[type="text"]
+      {
+        width: 300px;
+        height: 30px;
+        border: 0px;
+        border-radius: 20px;
+        border-bottom:2px solid blue;
+        margin-bottom: 20px;
+        
+      }
+      input[type="password"]
+      {
+        width: 300px;
+        height: 30px;
+        border: 0px;
+        border-radius: 20px;
+        border-bottom:2px solid blue;
+        margin-bottom: 20px;
+    }
+    input[type="submit"],
+    input[type="reset"]
+    {
+        width: 150px;
+        height:40px ;
+        margin:20px 20px;
+        background:rgb(56, 56, 170) ;
+        color: white;
+ 
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Student Registration</h2>
+      <div>
+      <form action="./Account.html" method="get">
+        <label for="" class="labels">Enter First Name:</label>
+        <input type="text" placeholder="Enter your name"  name="fname"/>
+    </div>
+    <div>
+        <label for="" class="labels">Enter Last Name:</label>
+        <input type="text" placeholder="Enter your Last name" name="lname" />
+    </div>
+    <div>
+        <label for="" class="labels">Enter Password:</label>
+        <input type="password" placeholder="Enter your password"  name="pwd" required />
+        <span style="color:red;">*</span>
+       
+    </div>
+    <div>
+        <label for="" class="labels">Select Gender:</label>
+        <input type="radio" name="gender" value="male"/> Male
+        <input type="radio" name="gender" value="female" /> Female    
+    </div>
+    <br>
+    <div>
+        <label for="" class="labels">Select Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="reading"/> Reading
+        <input type="checkbox" name="hobbies" value="writing"/> Writing
+        <input type="checkbox" name="hobbies" value="sports"/> Sports
+        <input type="checkbox" name="hobbies" checked value="coding "/> Coding
+
+        </div>
+        <br>
+        <div>
+            <label for="" class="labels">Select City:</label>
+            <select name="" id="">
+                <option disabled selected > Select From Below</option> 
+                <option value="delhi">Delhi</option>
+                <option value="chandigarh">Chandigarh</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="bangalore">Bangalore</option>
+            </select>
+            </div>
+            <br>
+            <div>
+                <label for="" class="labels">Enter Number:</label>
+                <input type="number" name="number" required/><span style="color:red ">*</span>
+            </div>
+            <br>
+            <div>
+                <label for="" class="labels">Enter DOB:</label>
+                <input type="date" name="DOB"/>
+            </div>
+            <br>
+            <div>
+                <label for="" class="labels">Enter DOT:</label>
+                <input type="time" name="DOT"/>
+            </div>
+            <br>
+            <div>
+               <input type="submit"/>
+               <input type="reset"/>
+            </div>
+
+
+
+      </form>
+    </div>
+  </body>
+</html>

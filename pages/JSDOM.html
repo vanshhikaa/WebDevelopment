@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para
+        {
+            border: 2px solid red;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>This is heading</h1>
+    <h1 id="head2">This is heading</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, eligendi?</p>
+    <input type="text" name="username">
+    <button>click me</button>
+
+    
+    <script>
+       //document.title="New Title" // To change the name of title in JS.
+       var c = document.getElementsByTagName("h1");//it is used to get elements coming under tag h1.
+       console.log(c);
+      console.log(c[0]); //it is used to get the content of h1 at index.
+      c[0].innerText="Updated Text"; //it is used to change the name of text.
+      c[0].style.textAlign="center"; // it is used for styling the content.
+      c[0].style.color="brown"; 
+      c[1].style.backgroundColor="red";
+      c[1].style.display="none"; // it is used to remove the heading.
+      
+
+      var d=document.getElementsByName('username'); // it is used to get element name.
+      console.log(d);
+      d[0].style.backgroundColor="pink";
+
+      var e=document.getElementById('head2'); //it is used to get id ,it works on only one so 'Element' is used instead of 'Elements'.
+      console.log(e);
+      e.textContent="Updated with getElementById";
+      e.style.display="block"; //it is used to regain the heading.
+
+      var f=document.getElementsByClassName('para')[1];
+      console.log(f);
+      f.style.color="blue";
+
+      var x=document.querySelector('.para'); //it is used to pick first element.
+      console.log(x);
+      x.style.borderColor="green";
+
+      var y=document.querySelectorAll('.para')[1]; //it is used to access all the elements.(here line 2 is picked out of the collections.)
+      console.log(y);
+      y.style.color="red";
+      y.style.borderColor="blue";
+
+      document.querySelector("#head2").style.textAlign="right";
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* #somemore
+{
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+} */
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px; /*Space between text ,20px from left and right.*/
+  /* position: fixed; It is used to fix the navigatiion bar. */
+  position: sticky; /*It is used to stick the navigation bar after some scrolling.*/
+  top: 0; /*It is used to fix the navigation bar from 0 on top.*/
+  /* color: white;*/
+  /* text-align: center;
+    line-height: 100px; */
+}
+#logo {
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  
+}
+#logo:hover
+{
+    
+  background-color: brown;
+  transition: 0.5s;
+
+}
+nav ul {
+  
+  list-style: none;
+  display: flex;
+}
+nav ul li a /* by writing this it will effect only given data.*/ {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px; /*Space between text ,20px from left and right.*/
+  font-size: 20px  ;
+  border-radius: 30px;
+  transition: 0.5s; /*It is used for smoothness in navigation bar.*/
+}
+nav ul li a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.box {
+  margin-top: 20px;
+  height: 100vh; /*viewport height:it represents how much is your screen height i.e.100vh.*/
+  width: 100%;
+  background-color: rgb(35, 151, 151);
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /*it will let ypu in all the paragraphs that will be possible and extra paragraph will be hidden.*/
+}
+#Section-1 {
+  display: flex; /*It always works on parent class*/
+  justify-content: space-evenly;
+}
+#Section-1 .circles /*it represents class circle of section-1.*/ {
+  width: 250px;
+  height: 250px;
+  background-color: peru;
+  /* display:inline-block;
+    text-align: center; */
+  border-radius: 50%; /*This radius is given to make circle after this whatever u give i.e.60,70....so on it will consider circle only*/
+  margin: 20px;
+  display: flex; /* It is used to make all the elements came in same line*/
+  justify-content: center; /* it makes the element move in horizontally center.*/
+  align-items: center; /* it makes the element move in vertically center.*/
+}
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#Section-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Section-2 main {
+  width: 48%;
+  height: 500px;
+  background-color: gray;
+  display: flex; /* It is used to make all the elements came in same line*/
+  justify-content: center; /* it makes the element move in horizontally center.*/
+  align-items: center; /* it makes the element move in vertically center.*/
+  color: white;
+  font-size: 24px;
+}
+aside {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+aside .art {
+  width: 100%;
+  height: 150px;
+  background-color: rgba(224, 77, 24, 0.774);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  color: antiquewhite;
+}
+#Section-3 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+#Section-3 .boxes {
+  width: 20%;
+  height: 300px;
+  background-color: rgb(243, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+.fa-circle-info
+{
+  color: purple;
+  font-size: 30px;
+  position: fixed;
+  top:300px;
+  right: 20px;
+}

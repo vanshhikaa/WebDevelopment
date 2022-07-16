@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px; /*Space between text ,20px from left and right.*/
+    /* position: fixed; It is used to fix the navigatiion bar. */
+    position: sticky; /*It is used to stick the navigation bar after some scrolling.*/
+    top: 0; /*It is used to fix the navigation bar from 0 on top.*/
+    /* color: white;*/
+    /* text-align: center;
+        line-height: 100px; */
+  }
+  #logo {
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-weight: bold;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  nav ul li a /* by writing this it will effect only given data.*/ {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 20px; /*Space between text ,20px from left and right.*/
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .box {
+    margin-top: 0px;
+    height: 10vh; /*viewport height:it represents how much is your screen height i.e.100vh.*/
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    /* line-height: 100px; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; it will let ypu in all the paragraphs that will be possible and extra paragraph will be hidden. */
+  }
+  .para {
+    margin: 2px ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  body {
+    background: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    background: white;
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: -1px 0 10px gray;
+    
+  }
+  .card-image {
+    background-color: white;
+    height: 250px;
+    margin-bottom: 10px;
+    background-size: cover;
+  }
+  .car-1 {
+    background-image: url(https://media.istockphoto.com/photos/generic-cargo-container-ship-at-sea-picture-id591986620?k=20&m=591986620&s=612x612&w=0&h=CO4GHyc9fBjHzqgNiwd8HKSd9f7CRlGAza3b27ZUq9M=);
+  }
+  .car-2
+  {
+      background-image: url(https://www.stattimes.com/h-upload/2022/03/09/23402-flecgoc033y18e0.webp);
+  }
+  .car-3
+  {
+      background-image: url(http://commercialvehicle.in/wp-content/uploads/2018/12/IMG_5585-copy.jpg);
+  }
+   .card h2
+  {
+      padding:10px;
+  } 
+  .card p
+  {
+      padding: 20px;
+  } 
+  .card a{
+      color: red;
+      padding: 15px 20px;
+      margin-left: 0px;
+  }
+  /* h3{
+      font-family: Montserrat;
+      font-weight: 100;
+      color: #2C3639;
+      
+      } */

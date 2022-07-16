@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Content</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <style>
+        .icon
+        {
+        font-size: 4.5rem;
+        color: red;
+        }
+      </style>
+</head>
+<body>
+    <h2>Multimedia Demos</h2>
+    <h1>Audio Tag</h1>
+    <span class="material-icons icon">
+        notifications_off
+        </span>
+
+    <!-- <audio id="audio1" src="../download/jalebi-baby-genda-phool-lcd-choreography-tesher-jacqueline-fernandez-badshah.mp3" controls 
+    loop hidden></audio> -->
+    <!-- If by any chance first music didn't play then other music can be played by following code: -->
+    <audio id="audio1" controls loop >
+        <source src="../downloads/jalebi-baby-genda-phool-lcd-choreography-tesher-jacqueline-fernandez-badshah.mp3">
+        <source src="../downloads/rangisari-lyrical-jugjugg-jeeyo-varun-d-kiara-a-anil-k-neetu-k-kanishk-and-kavita.mp3">
+
+    </audio>
+    <h1>Video Tag</h1>
+    <video src="../downloads/Jalebi Baby- Genda Phool - LCD Choreography - Tesher - Jacqueline Fernandez - Badshah -.mp4 Baby- Genda Phool - LCD Choreography - Tesher - Jacqueline Fernandez - Badshah -.mp4 Baby- Genda Phool - LCD Choreography - Tesher - Jacqueline Fernandez - Badshah -.mp4 " controls autoplay width="400" height="300" id="video1"></video>
+    
+    <script>
+        // It is used to make your sound on website stop on after clicking on sound button.
+        var x=document.getElementById("audio1");
+        var y=document.getElementsByClassName("icon")[0];
+        var z=document.getElementById("video1");
+        console.log(x);
+        console.log(y);
+        y.onclick=function() {
+            console.log("Icon tapped");
+            y.style.color="blue";
+            z.setAttribute("src","Rangisari.mp4");// it is used to play another video after clicking the button.
+        
+            //x.pause();
+            
+
+        };
+
+        document.addEventListener("visibilitychange", stopVideo);
+      
+      function stopVideo() {
+        if (document.hidden) {
+          document.getElementById("video1").pause();
+        } else {
+          document.getElementById("video1").play();
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+    

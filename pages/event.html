@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para
+        {
+            border: 2px solid red;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>This is heading</h1>
+    <h1 id="head2">This is heading</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, eligendi?</p>
+    <input type="text" name="username">
+    <!-- <button onclick="alert('Button Clicked')">click me</button> -->
+    <!-- above statement can also be written as this also: -->
+    <button onclick="hello()">click me</button> 
+    <button>button 2</button>
+
+    <script>
+        function hello()
+        {
+            alert("button clicked");
+            document.querySelector("input").style.backgroundColor="yellow";
+        }
+        //event binding:
+        var p=document.querySelectorAll("button")[1];
+        // p.onclick=function(){
+           //document.getElementsByTagName('h1')[1].style.textAlign="center";
+          // document.getElementsByTagName('h1')[1].style.backgroundColor="orange";
+
+            //we can also write above without writing function: using arrow function.
+            p.onclick= () =>{
+                document.getElementsByTagName('h1')[1].style.textAlign="center";
+         document.getElementsByTagName('h1')[1].style.backgroundColor="orange";
+            }
+
+           // }
+            //if there is only one line we can skip the curly braces:
+            //p.onclick= () =>
+              //  document.getElementsByTagName('h1')[1].style.textAlign="center";
+           //document.getElementsByTagName('h1')[1].style.backgroundColor="orange";
+
+           //to change the style of button:
+           p.onmouseover = () =>{
+            p.style.backgroundColor="red";
+            p.style.color="white";
+            p.style.width="200px";
+            p.style.height= "50px";
+        }
+
+           p.onmouseleave = () =>{
+            p.style.backgroundColor="blue";
+            p.style.color="white";
+           }
+
+           function abc()
+           {
+            document.querySelector("h1").style.color="red";
+
+           }
+
+           //Event listener:
+
+           p.addEventListener("click",abc); //when we click on button2 abc function will call : it is a example of adding of events after clicking.
+           p.addEventListener("mouseover", xyz);
+           p.addEventListener("mouseleave",pqr);
+
+           //remove event listener:
+
+           p.removeEventListener("click",abc);
+
+
+
+            
+
+
+
+
+
+        
+
+        
+    </script>
+</body>
+</html>
